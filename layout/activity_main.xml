@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#2E2C2C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="360dp"
+        android:layout_height="105dp"
+        android:background="@drawable/textfield"
+        android:paddingTop="40dp"
+        android:paddingRight="10dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="360dp"
+        android:layout_height="105dp"
+        android:layout_below="@+id/textview1"
+        android:background="@drawable/textfield"
+        android:paddingTop="40dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="textEnd"
+        android:textColor="#26727C"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/textview2"
+        android:background="@drawable/button"
+        android:text="AC"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonBackspace"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/textview2"
+        android:background="@drawable/button"
+        android:layout_toRightOf="@+id/buttonClear"
+        android:text="B"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonPercent"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/textview2"
+        android:layout_toRightOf="@+id/buttonBackspace"
+        android:text="%"
+        android:background="@drawable/button"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonDivide"
+        android:layout_width="96dp"
+        android:layout_height="88dp"
+        android:paddingLeft="2dp"
+        android:layout_below="@+id/textview2"
+        android:layout_toRightOf="@+id/buttonPercent"
+        android:background="@drawable/button"
+        android:text="/"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/buttonClear"
+        android:text="9"
+        android:background="@drawable/button"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/buttonBackspace"
+        android:layout_toRightOf="@+id/buttonClear"
+        android:text="8"
+        android:background="@drawable/button"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/buttonPercent"
+        android:layout_toRightOf="@+id/buttonBackspace"
+        android:text="7"
+        android:background="@drawable/button"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonMultiply"
+        android:layout_width="96dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/buttonDivide"
+        android:layout_toRightOf="@+id/buttonPercent"
+        android:background="@drawable/button"
+        android:text="*"
+        android:paddingLeft="2dp"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/button9"
+        android:text="6"
+        android:background="@drawable/button"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/button8"
+        android:layout_toRightOf="@+id/buttonClear"
+        android:text="5"
+        android:background="@drawable/button"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/button7"
+        android:layout_toRightOf="@+id/buttonBackspace"
+        android:text="4"
+        android:background="@drawable/button"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonSubstract"
+        android:layout_width="96dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/buttonMultiply"
+        android:layout_toRightOf="@+id/buttonPercent"
+        android:background="@drawable/button"
+        android:text="-"
+        android:paddingLeft="2dp"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/button6"
+        android:text="3"
+        android:background="@drawable/button"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/button5"
+        android:layout_toRightOf="@+id/buttonClear"
+        android:text="2"
+        android:background="@drawable/button"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/button4"
+        android:layout_toRightOf="@+id/buttonBackspace"
+        android:text="1"
+        android:background="@drawable/button"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="96dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/buttonSubstract"
+        android:layout_toRightOf="@+id/buttonPercent"
+        android:background="@drawable/button"
+        android:text="+"
+        android:paddingLeft="2dp"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/button1"
+        android:text="0"
+        android:background="@drawable/button"
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonDot"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/buttonClear"
+        android:background="@drawable/button"
+        android:text="."
+        android:textColor="@color/teal_200"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/buttonEqual"
+        android:layout_width="184dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/button3"
+        android:layout_toRightOf="@+id/buttonBackspace"
+        android:background="@drawable/button"
+
+        android:text="="
+        android:textColor="@color/purple_200"
+        android:textSize="35sp" />
+
+</RelativeLayout>
+
